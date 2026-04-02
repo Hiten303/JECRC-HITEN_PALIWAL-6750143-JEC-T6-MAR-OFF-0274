@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.10.0 on win32)" generated="2026-03-30T16:00:31.104781" rpa="false" schemaversion="5">
+<suite id="s1" name="Task3" source="D:\pycharm\project\30-MARCH-2026\task3.robot">
+<test id="s1-t1" name="amazon" line="6">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-30T16:00:31.302405" level="INFO">Opening browser 'chrome' to base url 'https://www.amazon.in/'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-30T16:00:31.302405" elapsed="3.143957"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-30T16:00:36.455600" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-30T16:00:34.448952" elapsed="2.006648"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-30T16:00:36.455600" level="INFO">Clicking element 'xpath=//a[@href="/electronics/b/?ie=UTF8&amp;node=976419031&amp;ref_=nav_cs_electronics"]'.</msg>
+<arg>xpath=//a[@href="/electronics/b/?ie=UTF8&amp;node=976419031&amp;ref_=nav_cs_electronics"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-30T16:00:36.455600" elapsed="2.071741"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-30T16:00:40.531578" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-30T16:00:38.527707" elapsed="2.003871"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-30T16:00:40.532196" level="INFO">Clicking element 'xpath=//label[@for="apb-browse-refinements-checkbox_6"]/i'.</msg>
+<arg>xpath=//label[@for="apb-browse-refinements-checkbox_6"]/i</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-30T16:00:40.532196" elapsed="1.667979"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-30T16:00:44.204880" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-30T16:00:42.200175" elapsed="2.004705"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2026-03-30T16:00:44.220930" level="INFO">${product_name} = pTron Dynamo Sprint 20000mAh 35W Super Fast Charging, USB Type-C Input Power Bank Compatible with QC3.0/PD3.0, Built-in Charging Cable, 3 Charging Outputs, Type-C Input/Output Port (Indigo Blue)</msg>
+<var>${product_name}</var>
+<arg>xpath=(//h2[contains(@class,"a-size-base-plus")]/span)[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-30T16:00:44.204880" elapsed="0.016050"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${product_name}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-03-30T16:00:44.236632" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-30T16:00:46.248055" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-30T16:00:44.236632" elapsed="2.011423"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-30T16:00:46.248055" level="INFO">Clicking element 'xpath=(//span[@data-component-type="s-product-image"])[2]/a'.</msg>
+<arg>xpath=(//span[@data-component-type="s-product-image"])[2]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-30T16:00:46.248055" elapsed="0.147466"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-30T16:00:48.406443" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-30T16:00:46.395521" elapsed="2.010922"/>
+</kw>
+<kw name="Get Window Handles" owner="SeleniumLibrary">
+<msg time="2026-03-30T16:00:48.513720" level="INFO">@{windows} = [ A8270D311312B9E5D3DB1AF34DB6A89C | 81BD3F5F8E55BD3FC0F9406E46E81BED ]</msg>
+<var>@{windows}</var>
+<doc>Returns all child window handles of the selected browser as a list.</doc>
+<status status="PASS" start="2026-03-30T16:00:48.407387" elapsed="0.106333"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-30T16:00:51.525701" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-30T16:00:48.514719" elapsed="3.011537"/>
+</kw>
+<kw name="Switch Window" owner="SeleniumLibrary">
+<arg>new</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" start="2026-03-30T16:00:51.526256" elapsed="0.010486"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-30T16:00:54.542288" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-30T16:00:51.536742" elapsed="3.005546"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-03-30T16:00:54.574310" level="INFO">Current page contains text 'pTron Dynamo Sprint 20000mAh 35W Super Fast Charging, USB Type-C Input Power Bank Compatible with QC3.0/PD3.0, Built-in Charging Cable, 3 Charging Outputs, Type-C Input/Output Port (Indigo Blue)'.</msg>
+<arg>${product_name}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-03-30T16:00:54.542288" elapsed="0.032022"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-30T16:00:57.583829" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-30T16:00:54.574310" elapsed="3.009519"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2026-03-30T16:00:57.608866" level="INFO">${actual_price} = 1,699</msg>
+<var>${actual_price}</var>
+<arg>xpath=//span[@class="a-price-whole"]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-30T16:00:57.583829" elapsed="0.025037"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${actual_price}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-03-30T16:00:57.608866" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-30T16:01:00.609008" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-30T16:00:57.608866" elapsed="3.000142"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2026-03-30T16:01:00.625135" level="INFO">${discount} = -65%</msg>
+<var>${discount}</var>
+<arg>xpath=//span[@class="apex-savings-container"]/span</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-30T16:01:00.609008" elapsed="0.016127"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${discount}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-03-30T16:01:00.625135" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-30T16:01:03.633757" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-30T16:01:00.625135" elapsed="3.008622"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>id=add-to-cart-button</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-03-30T16:01:03.633757" elapsed="0.314405"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-30T16:01:06.961248" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-30T16:01:03.948162" elapsed="3.013086"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-30T16:01:06.961248" level="INFO">Clicking element 'id=add-to-cart-button'.</msg>
+<arg>id=add-to-cart-button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-30T16:01:06.961248" elapsed="1.252930"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-30T16:01:11.230356" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-30T16:01:08.215435" elapsed="3.014921"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-30T16:01:11.230356" level="INFO">Clicking element 'id=nav-cart-count'.</msg>
+<arg>id=nav-cart-count</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-30T16:01:11.230356" elapsed="1.291539"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-30T16:01:15.536385" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-30T16:01:12.521895" elapsed="3.014490"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-03-30T16:01:15.552386" level="INFO">Current page contains text 'pTron Dynamo Sprint 20000mAh 35W Super Fast Charging, USB Type-C Input Power Bank Compatible with QC3.0/PD3.0, Built-in Charging Cable, 3 Charging Outputs, Type-C Input/Output Port (Indigo Blue)'.</msg>
+<arg>${product_name}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-03-30T16:01:15.536385" elapsed="0.016001"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-30T16:01:18.562361" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-30T16:01:15.552386" elapsed="3.009975"/>
+</kw>
+<kw name="Switch Window" owner="SeleniumLibrary">
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" start="2026-03-30T16:01:18.562361" elapsed="0.028739"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-30T16:01:18.591100" elapsed="2.226775"/>
+</kw>
+<status status="PASS" start="2026-03-30T16:00:31.302405" elapsed="49.515470"/>
+</test>
+<status status="PASS" start="2026-03-30T16:00:31.104781" elapsed="49.713094"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Task3" id="s1" pass="1" fail="0" skip="0">Task3</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
